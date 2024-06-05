@@ -1,0 +1,302 @@
+
+@media only screen and (min-width: 700px) {
+
+    #track-intro {
+        color: var(--softBlue);
+    }
+
+    #observe-intro {
+        color: var(--softGreen);
+    }
+
+    .logo img {
+        height: 3em;
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+
+    .logo span {
+        font-family: "Baloo";
+        font-size: 2em;
+    }
+
+    .logo-name-wallet {
+        color: var(--headerBackground);
+        text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff,
+        0.03em 0.03em #fff, -0.03em -0.03em #fff, 0.03em -0.03em #fff, -0.03em 0.03em #fff;;
+    }
+
+    .intro {
+        margin-top: 1.7em;
+        font-size: 1.7em;
+        font-family: "Baloo";
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 3em;
+    }
+
+    .vertical-line {
+        border: 0.05em solid var(--headerBorder);
+        height: 24em;
+    }
+
+    .header-vertical-line {
+        border: 0.05em solid var(--headerBorder);
+        height: 2em;
+        margin-right: 3em;
+    }
+
+    .horizontal-line {
+        margin-top: 5em;
+        border: 0.05em solid var(--headerBorder);
+        width: 90%;
+    }
+
+    .chart-total-amount {
+        margin-left: 5em;
+    }
+
+    .chart-total-amount p {
+        font-family: "Baloo";
+        font-size: 1.2em;
+        color: var(--inputText);
+    }
+
+    .pie-chart-legend-div {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .line-chart {
+        text-align: center;
+        width: 105%;
+        position: relative;
+    }
+
+    .balance-flow {
+        font-family: "Baloo";
+        margin-right: 5em;
+        text-align: center;
+        background-color: var(--headerBackground);
+        border: 0.2em solid var(--headerBorder);
+    }
+
+    .chart-total-amount, .balance-flow {
+        text-align: center;
+        width: 40%;
+        height: 24em;
+        background-color: var(--headerBackground);
+        border: 0.1em solid var(--headerBorder);
+        border-radius: 1.7em;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .pie-chart {
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+        width: 15em;
+        height: 15em;
+        align-items: center;
+    }
+
+    .pie-info {
+        text-align: center;
+        width: 50%;
+    }
+
+    .pie-info .ticker-amount {
+        margin-left: 1em;
+        text-align: left;
+    }
+
+    .pie-info .percentage {
+        margin-right: 0.5em;
+        text-align: center;
+        color: var(--inputText);
+        font-size: 0.9em;
+        text-align: right;
+    }
+
+    .pie-chart-legend {
+        border-radius: 0.7em;
+        border: 0.1em solid var(--headerBorder);
+        margin-top: 0.7em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 15em;
+        height: 2.3em;
+    }
+
+    .point-ticker {
+        margin-left: 0.5em;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .first, .second, .third, .fourth, .other {
+        width: 1.7em;
+        height: 1.7em;
+        border-radius: 3em;
+    }
+
+    .balance-info {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .balance-info label {
+        font-size: 2.5em;
+    }
+
+    .balance-info p {
+        color: var(--chartGreen);
+        margin-top: -0.2em;
+    }
+
+    .balance-info .price-change {
+        margin-left: 1em;
+    }
+
+    .price-change {
+        font-size: 0.9em;
+        border-radius: 0.7em;
+        padding: 0.3em;
+    }
+
+    .growth {
+        background-color: rgb(105, 174, 108, 0.25);
+        /*border: 0.1em solid var(--chartGreen);*/
+        color: var(--chartGreen);
+    }
+
+    .fall {
+        background-color: rgba(174, 105, 105, 0.25);
+        /*border: 0.1em solid var(--chartRed);*/
+        color: var(--chartRed);
+    }
+
+    .timeframes {
+        margin-top: 2em;
+        font-family: "Baloo";
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+
+    .timeframes label {
+        width: 2.5em;    
+    }
+
+    .timeframes .active {
+        width: 2.5em;
+        background-color: rgb(51, 58, 69, 0.25);
+        border: 0.1em solid var(--headerBorder);
+        border-radius: 0.6em;
+    }
+
+    .market-condition {
+        height: 30em;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        flex-wrap: wrap;
+        margin-bottom: 9em;
+    }
+
+    .first {
+        background-color: #D4B95A;
+    }
+    .second {
+        background-color: #69AE6C;
+    }
+    .third {
+        background-color: #3599C4;
+    }
+    .fourth {
+        background-color: #BC6BE2;
+    }
+    .other {
+        background-color: #EF9C4F;
+    }
+
+    .market-table {
+        padding: 1em;
+        margin-left: 5em;
+        background-color: var(--headerBackground);
+        border: 0.1em solid var(--headerBorder);
+        border-radius: 1.7em;
+    }
+
+    .market-condition p {
+        font-family: "Baloo";
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    .market-table .ticker {
+        color: var(--lightGray);
+    }
+
+    .market-condition table {
+        font-size: 1.1em;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .market-condition tr {
+        border-top: 0.1em solid var(--inputBody);
+    }
+    .market-condition tr:first-child {
+        border-top: none;
+        border-bottom: 0.1em solid var(--inputBody);
+    }
+    .market-condition td {
+        border: none !important;
+    }
+
+    .market-condition th, .market-condition td {
+        padding: 1em;
+        text-align: left;
+    }
+
+    .market-condition-info {
+        width: 60%;
+    }
+
+    .market-logo {
+        background-color: var(--headerBackground);
+        border: 0.1em solid var(--headerBorder);
+        border-radius: 1.7em;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .market-logo img {
+        padding: 1em;
+        width: 15em;
+        height: 15em;
+    }
+
+    .market-logo p {
+        padding: 0 1em 0 1em;
+        font-family: "Baloo";
+        font-size: 2em;
+        color: var(--inputText);
+        margin-top: 0.1em;
+    }
+}

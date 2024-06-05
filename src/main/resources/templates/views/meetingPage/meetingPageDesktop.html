@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Track transactions and observe wallet analytics with WalletWatcher">
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/buttonStyle.css">
+    <link rel="stylesheet" href="/styles/meetingDesktopStyle.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+
+    <title>WalletWatcher</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/meetingPage/logo.png" alt="logo">
+            <span class="logo-name-wallet">Wallet</span><span>Watcher</span>
+        </div>
+        <div class="search-and-buttons">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="address...">
+                <button type="submit" id="magnifier"><img src="/images/meetingPage/magnifier.png" alt="magnifier" width="20em"></button>
+            </div>
+
+            <div class="header-vertical-line"></div>
+
+            <button class="cartoon-button">Sign in</button>
+            <button class="cartoon-button">Sign up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1><span id="track-intro">Track</span> transactions from any wallet you desire</h1>
+            <h1 style="margin-top: -1em;"><span id="observe-intro">Observe</span> your wallet analytics</h1>
+        </section>
+        <section class="dashboard">
+            <div class="chart-total-amount">
+                <div class="pie-chart-legend-div">
+                    <div class="pie-chart">
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                    <div class="pie-info">
+                        <div class="pie-chart-legend">
+                            <div class="point-ticker">
+                                <div class="first"></div>
+                                <div class="ticker-amount">
+                                    BTC (0.532)
+                                </div>
+                            </div>
+                            <div class="percentage">
+                                35.5%
+                            </div>
+                        </div>
+                        <div class="pie-chart-legend">
+                            <div class="point-ticker">
+                                <div class="second"></div>
+                                <div class="ticker-amount">
+                                    ETH (2.052)
+                                </div>
+                            </div>
+                            <div class="percentage">
+                                27.2%
+                            </div>
+                        </div>
+                        <div class="pie-chart-legend">
+                            <div class="point-ticker">
+                                <div class="third"></div>
+                                <div class="ticker-amount">
+                                    SOL (8.53)
+                                </div>
+                            </div>
+                            <div class="percentage">
+                                20.1%
+                            </div>
+                        </div>
+                        <div class="pie-chart-legend">
+                            <div class="point-ticker">
+                                <div class="fourth"></div>
+                                <div class="ticker-amount">
+                                    TON (124.23)
+                                </div>
+                            </div>
+                            <div class="percentage">
+                                14.2%
+                            </div>
+                        </div>
+                        <div class="pie-chart-legend">
+                            <div class="point-ticker">
+                                <div class="other"></div>
+                                <div class="ticker-amount">
+                                    Other
+                                </div>
+                            </div>
+                            <div class="percentage">
+                                3%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Total amount: ~ 39,599.63 USD</p>
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="balance-flow">
+                <div class="balance-info">
+                    <label>$ 39,599.63</label>
+                    <p>$1,172.31 <span class="price-change growth">▲ 80.26%</span></p>
+                </div>
+                <div class="line-chart">
+                    <canvas id="myLineChart"></canvas>
+                </div>
+                <div class="timeframes">
+                    <label>1H</label>
+                    <label>4H</label>
+                    <label>1D</label>
+                    <label>1W</label>
+                    <label>1M</label>
+                    <label>6M</label>
+                    <div class="active">
+                        <label>1Y</label>
+                    </div>
+                    <label>ALL</label>
+                </div>
+                <br>
+            </div>
+        </section>
+
+        <hr class="horizontal-line">
+
+        <section class="market-condition">
+            <div class="market-condition-info">
+                <p>Market condition</p>
+                <div class="market-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>24H change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="market-table-tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="market-logo">
+                <img src="/images/meetingPage/logo.png" alt="Logo">
+                <p>Woodrow Wilson?<br>Willy Wonka?<br>Walter White?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Badyusha">
+            <img src="/images/meetingPage/github.png" height="40em" width="40em" alt="GitHub">
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/meetingPageScript.js"></script>
+    <script src="/js/buttons/buttonScript.js"></script>
+</body>
+</html>
