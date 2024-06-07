@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/buttonStyle.css">
     <link rel="stylesheet" href="/styles/meetingDesktopStyle.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/signInForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <title>WalletWatcher</title>
 </head>
@@ -28,8 +27,10 @@
 
             <div class="header-vertical-line"></div>
 
-            <button class="cartoon-button">Sign in</button>
-            <button class="cartoon-button">Sign up</button>
+            <div class="registration-buttons">
+                <button id="sign-in-button" class="cartoon-button empty-button">Sign in</button>
+                <button id="sign-up-button" class="cartoon-button dark-button">Sign up</button>
+            </div>
         </div>
     </header>
 
@@ -46,9 +47,9 @@
                     </div>
                     <div class="pie-info">
                         <div class="pie-chart-legend">
-                            <div class="point-ticker">
+                            <div class="point-symbol">
                                 <div class="first"></div>
-                                <div class="ticker-amount">
+                                <div class="symbol-amount">
                                     BTC (0.532)
                                 </div>
                             </div>
@@ -57,9 +58,9 @@
                             </div>
                         </div>
                         <div class="pie-chart-legend">
-                            <div class="point-ticker">
+                            <div class="point-symbol">
                                 <div class="second"></div>
-                                <div class="ticker-amount">
+                                <div class="symbol-amount">
                                     ETH (2.052)
                                 </div>
                             </div>
@@ -68,9 +69,9 @@
                             </div>
                         </div>
                         <div class="pie-chart-legend">
-                            <div class="point-ticker">
+                            <div class="point-symbol">
                                 <div class="third"></div>
-                                <div class="ticker-amount">
+                                <div class="symbol-amount">
                                     SOL (8.53)
                                 </div>
                             </div>
@@ -79,9 +80,9 @@
                             </div>
                         </div>
                         <div class="pie-chart-legend">
-                            <div class="point-ticker">
+                            <div class="point-symbol">
                                 <div class="fourth"></div>
-                                <div class="ticker-amount">
+                                <div class="symbol-amount">
                                     TON (124.23)
                                 </div>
                             </div>
@@ -90,9 +91,9 @@
                             </div>
                         </div>
                         <div class="pie-chart-legend">
-                            <div class="point-ticker">
+                            <div class="point-symbol">
                                 <div class="other"></div>
-                                <div class="ticker-amount">
+                                <div class="symbol-amount">
                                     Other
                                 </div>
                             </div>
@@ -138,7 +139,7 @@
             <div class="market-condition-info">
                 <p>Market condition</p>
                 <div class="market-table">
-                    <table>
+                    <table class="live-market-table">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -153,7 +154,7 @@
                     </table>
                 </div>
             </div>
-            
+
             <div class="market-logo">
                 <img src="/images/meetingPage/logo.png" alt="Logo">
                 <p>Woodrow Wilson?<br>Willy Wonka?<br>Walter White?</p>
@@ -166,8 +167,62 @@
         </a>
     </footer>
 
+    <!-- Overlay for dimming the background -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Popup Form -->
+    <div id="popup-form" class="popup-form">
+        <div class="auth-action">
+            <label>Sign In</label>
+        </div>
+
+        <div class="auth-variants">
+            <a href="#">
+                <div class="auth-variants-square">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="auth-variants-square">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="or-separator">
+            <div class="form-horizontal-line"></div>
+            or
+            <div class="form-horizontal-line"></div>
+        </div>
+
+        <form class="sign-in-form">
+            <div class="data-input">
+                <div class="form-top-placeholfer">
+                    <label>Email</label>
+                </div>
+                <input type="email" id="form-input" name="email" required>
+            </div>
+
+            <div class="data-input">
+                <div class="form-top-password-placeholfer">
+                    <label>Password</label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <input type="password" id="form-input" name="password" required>
+            </div>
+
+            <button type="submit" id="sign-in-form-button" class="cartoon-button dark-button">Sign In</button>
+
+            <div class="new-to-walletwatcher">
+                <label>New to WalletWatcher?</label>
+                <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/js/meetingPageScript.js"></script>
-    <script src="/js/buttons/buttonScript.js"></script>
+    <script src="/js/meetingPage.js"></script>
+    <script src="/js/authForm.js"></script>
 </body>
 </html>

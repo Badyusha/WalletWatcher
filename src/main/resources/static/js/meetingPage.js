@@ -5,12 +5,28 @@ function ParseFloat(str,val) {
 }
 
 function addMarketConditionTableErrorMessage() {
-    let tbody = document.getElementById("market-table-tbody");
+    let tbody = document.querySelector(".market-table");
 
-    tbody.insertRow(tbody.rows.length).innerHTML = `<td>Server error :(</td>`;
+    tbody.innerHTML = `<div class="market-table-error">
+                            Server error :(<br><br>
+                            Check your internet connection...
+                        </div>`;
 }
 
 function addTopCMCCryptoCurrencyData(data) {
+    document.querySelector(".live-market-table")
+        .innerHTML = `<thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>24H change</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="market-table-tbody">
+        
+                                </tbody>`;
+
     for(let i = 0; i < data.length; ++i) {
 
         let tbody = document.getElementById("market-table-tbody");
@@ -22,7 +38,7 @@ function addTopCMCCryptoCurrencyData(data) {
                                                             ${data[i].rank}
                                                         </td>
                                                         <td>
-                                                            <strong>${data[i].name}</strong><span class="ticker"> — ${data[i].ticker}</span>
+                                                            <strong>${data[i].name}</strong><span class="symbol"> — ${data[i].symbol}</span>
                                                         </td>
                                                         <td>
                                                             $ ${ParseFloat(data[i].price, 2)}

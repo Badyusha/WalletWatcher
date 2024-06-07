@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
 @media only screen and (min-width: 700px) {
 
@@ -16,8 +17,9 @@
     }
 
     .logo span {
-        font-family: "Baloo";
         font-size: 2em;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
     }
 
     .logo-name-wallet {
@@ -26,10 +28,18 @@
         0.03em 0.03em #fff, -0.03em -0.03em #fff, 0.03em -0.03em #fff, -0.03em 0.03em #fff;;
     }
 
+    .registration-buttons {
+        margin-right: 1em;
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
     .intro {
         margin-top: 1.7em;
         font-size: 1.7em;
-        font-family: "Baloo";
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
     }
 
     .dashboard {
@@ -48,7 +58,7 @@
     .header-vertical-line {
         border: 0.05em solid var(--headerBorder);
         height: 2em;
-        margin-right: 3em;
+        margin-right: 2em;
     }
 
     .horizontal-line {
@@ -62,8 +72,9 @@
     }
 
     .chart-total-amount p {
-        font-family: "Baloo";
         font-size: 1.2em;
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
         color: var(--inputText);
     }
 
@@ -81,7 +92,8 @@
     }
 
     .balance-flow {
-        font-family: "Baloo";
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
         margin-right: 5em;
         text-align: center;
         background-color: var(--headerBackground);
@@ -115,14 +127,13 @@
         width: 50%;
     }
 
-    .pie-info .ticker-amount {
+    .pie-info .symbol-amount {
         margin-left: 1em;
         text-align: left;
     }
 
     .pie-info .percentage {
         margin-right: 0.5em;
-        text-align: center;
         color: var(--inputText);
         font-size: 0.9em;
         text-align: right;
@@ -139,12 +150,11 @@
         height: 2.3em;
     }
 
-    .point-ticker {
+    .point-symbol {
         margin-left: 0.5em;
         display: flex;
         align-items: center;
     }
-
 
     .first, .second, .third, .fourth, .other {
         width: 1.7em;
@@ -190,7 +200,6 @@
 
     .timeframes {
         margin-top: 2em;
-        font-family: "Baloo";
         align-items: center;
         display: flex;
         justify-content: center;
@@ -199,7 +208,7 @@
 
 
     .timeframes label {
-        width: 2.5em;    
+        width: 2.5em;
     }
 
     .timeframes .active {
@@ -242,13 +251,21 @@
         border-radius: 1.7em;
     }
 
+    .market-table-error {
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.5em;
+        color: var(--lightGray);
+    }
+
     .market-condition p {
-        font-family: "Baloo";
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
         font-size: 3em;
         margin-bottom: 0.5em;
     }
 
-    .market-table .ticker {
+    .market-table .symbol {
         color: var(--lightGray);
     }
 
@@ -294,7 +311,8 @@
 
     .market-logo p {
         padding: 0 1em 0 1em;
-        font-family: "Baloo";
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 900;
         font-size: 2em;
         color: var(--inputText);
         margin-top: 0.1em;

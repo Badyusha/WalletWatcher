@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --bodyBackground: #0D1016;
     --headerBackground: #141922;
@@ -13,7 +15,7 @@
 
 body {
     text-align: center;
-    font-family: 'Noto Sans';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: var(--bodyBackground);
     color: white;
@@ -23,11 +25,19 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-  
+
 /* Скрываем scrollbar для IE, Edge и Firefox */
 .body {
     -ms-overflow-style: none;  /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+    outline: none;
 }
 
 header {
@@ -71,11 +81,12 @@ footer {
 
 .search-input {
     width: 13em;
-    font-family: "Noto Sans";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     padding: 0.5em 2.5em 0.5em 1em;
     display: block;
     color: var(--inputText);
-    border: 0.2em solid var(--headerBorder);
+    border: 0.15em solid var(--headerBorder);
     border-radius: 0.8em;
     background-color: var(--inputBody);
 }
