@@ -100,7 +100,8 @@
     background-color: var(--inputBody);
     border: 0.15em solid var(--headerBorder);
     border-radius: 0.5em;
-    padding: 0.2em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
 }
 
 #sign-in-form-button {
